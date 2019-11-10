@@ -20,7 +20,7 @@ class Doctor
     return appointments.new(name, self, genre)
   end
   
-  def genres
-    return songs.map { |song| song.genre }
+  def patients
+    return appointments.map { |appointment| appointment.patient }
   end
 end
