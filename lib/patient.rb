@@ -16,8 +16,8 @@ class Patient
     return Appointment.all.select { |appointment| appointment.patient == self }
   end
   
-  def new_appointment(doctor, date)
-    return appointments.new(name, self, genre)
+  def new_appointment(date, doctor)
+    return appointments.new(date,)
   end
   
   def patients
