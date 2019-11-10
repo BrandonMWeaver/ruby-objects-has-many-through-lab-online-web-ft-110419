@@ -10,7 +10,7 @@ class Genre
   end
   
   def songs
-    
+    return Song.all.select { |song| song.genre == self }
   end
   
   def self.all
